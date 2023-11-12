@@ -17,7 +17,7 @@
 
     <nav class="flex items-center justify-between py-4 bg-white border-b border-gray-200">
         <a href="https://artium.epizy.com/" class="text-black hover:text-gray-700">Artium</a>
-        <a href="/about" class="text-black hover:text-gray-700">About</a>
+        <a onClick="document.getElementById('help').scrollIntoView();" class="cursor-pointer text-black hover:text-gray-700"><p align="center">Help Ending World Hunger</p></a>
         <a href="/contact" class="text-black hover:text-gray-700">Contact</a>
     </nav>
 
@@ -25,6 +25,7 @@
 
         <div style="width: 600px;">
 
+            <!-- Read more about world hunger -->
             <zero-md src="markdown/main.md">
                 <template>
                     <link rel="stylesheet"
@@ -95,6 +96,19 @@
                     <iframe src="./counter/food/index.html" frameborder="0" style="width: 100%; height: 60px;"></iframe>
                     <p style="font-size: 20px; font-weight: bold;" align="center">Tons of food lost or wasted this year, globally</p>
 
+                    <br>
+                </script>
+            </zero-md>
+
+            <!-- Help ending worldhunger -->
+            <zero-md id="help" src="markdown/main.md">
+                <template>
+                    <link rel="stylesheet"
+                        href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css" />
+                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
+                </template>
+
+                <script type="text/markdown">
                     <hr/>
 
                     <p align="center" style="font-weight: 800; font-size: 25px; background-color: #ededed; border-radius: 10px; margin: 10px"> TOGETHER WE CAN END WORLD HUNGER! </p>
