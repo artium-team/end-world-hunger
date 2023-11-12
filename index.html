@@ -10,7 +10,7 @@
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
-<body >
+<body>
     <script src="app.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
@@ -23,22 +23,24 @@
                 class="cursor-pointer text-black hover:text-gray-700">
                 <p align="center">Help Ending World Hunger</p>
             </a>
-            <a href="/contact" class="text-black hover:text-gray-700">Contact</a>
+            <a onClick="document.getElementById('contact').scrollIntoView();"
+                class="cursor-pointer text-black hover:text-gray-700">Contact</a>
         </nav>
 
-    <div id="wrapper" class="w-full flex justify-center">
+        <div id="wrapper" class="w-full flex justify-center">
 
-        <div style="width: 600px;">
+            <div style="width: 600px;">
 
-            <!-- Read more about world hunger -->
-            <zero-md src="markdown/main.md">
-                <template>
-                    <link rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css" />
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
-                </template>
+                <!-- Read more about world hunger -->
+                <zero-md src="markdown/main.md">
+                    <template>
+                        <link rel="stylesheet"
+                            href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css" />
+                        <link rel="stylesheet"
+                            href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
+                    </template>
 
-                <script type="text/markdown">
+                    <script type="text/markdown">
                     <iframe src="./counter/death/index.html" frameborder="0" style="width: 100%;"></iframe>
                     <p style="font-size: 25px; font-weight: bold;" align="center">People who died from hunger</p>
                     <p style="font-size: 15px; font-weight: bold;" align="center">IN THE WORLD, THIS YEAR</p>
@@ -103,17 +105,18 @@
 
                     <br>
                 </script>
-            </zero-md>
+                </zero-md>
 
-            <!-- Help ending worldhunger -->
-            <zero-md id="help" src="markdown/main.md">
-                <template>
-                    <link rel="stylesheet"
-                        href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css" />
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
-                </template>
+                <!-- Help ending worldhunger -->
+                <zero-md id="help" src="markdown/main.md">
+                    <template>
+                        <link rel="stylesheet"
+                            href="https://cdn.jsdelivr.net/gh/sindresorhus/github-markdown-css@4/github-markdown.min.css" />
+                        <link rel="stylesheet"
+                            href="https://cdn.jsdelivr.net/gh/PrismJS/prism@1/themes/prism.min.css" />
+                    </template>
 
-                <script type="text/markdown">
+                    <script type="text/markdown">
                     <hr/>
 
                     <p align="center" style="font-weight: 800; font-size: 25px; background-color: #ededed; border-radius: 10px; margin: 10px"> TOGETHER WE CAN END WORLD HUNGER! </p>
@@ -138,17 +141,24 @@
                     - Spread the word about our fund on social media.
                     - Encourage your friends and family to donate.
 
+                    <hr/>
+
+                    <p align="center" style="font-weight: 800; font-size: 25px; background-color: #ededed; border-radius: 10px; margin: 10px"> TOGETHER, WE CAN MAKE A DIFFERENCE! </p>
+
+                    <hr/>                    
+
                 </script>
-            </zero-md>
+                </zero-md>
+            </div>
         </div>
     </div>
-    </div>
 
+    <!-- Contact -->
     <footer class="bg-gray-500 py-4 text-white text-center mt-6">
-        <p>Contact us:</p>
-        <ul class="flex justify-center gap-4">
-          <li><a href="mailto:info@example.com" class="hover:text-gray-200">info@example.com</a></li>
-          <li><a href="tel:1-800-555-1212" class="hover:text-gray-200">1-800-555-1212</a></li>
+        <p class="underline font-bold mb-3">Contact us:</p>
+        <ul class="flex justify-center gap-4 flex-wrap">
+            <li><a href="mailto:info@example.com" class="hover:text-gray-200">nguyengiabach1201@gmail.com</a></li>
+            <li><a href="tel:1-800-555-1212" id="contact" class="hover:text-gray-200">1-800-555-1212</a></li>
         </ul>
     </footer>
 
